@@ -1,0 +1,11 @@
+# 数据结构第一次作业
+### 文件结构
+- main.cpp:主文件，通过调用MyLinkList.cpp中的函数实现5个题目
+- MyLinkList.cpp: 
+  - 实现MyLinkList类的全部功能函数
+- MyLinkList.hpp: 
+  - 定义MyLinkList类的全部功能函数
+### 文件执行
+- 执行main文件时需要分别编译后链接可重定位文件，所以使用Makefile简化操作
+  - make
+  - ./main
