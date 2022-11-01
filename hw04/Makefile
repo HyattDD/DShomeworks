@@ -1,4 +1,4 @@
-main : main.o BinaryTree.o BinaryTreeNode.o
+main : main.o
 	g++ *.o -o $@
 %.o : %.c
 	g++ -c $< -o $@

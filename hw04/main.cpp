@@ -1,5 +1,4 @@
 #include <iostream>
-#include "BinaryTreeNode.hpp"
 #include "BinaryTree.hpp"
 
 int main() {
@@ -15,10 +14,16 @@ int main() {
                      '#', '#', 'G', 'H', 'I'};
     std::cout << "The nodes in the binary tree are as below:" << std::endl;
     std::cout << "<by level travel, '#' means null node>" << std::endl; 
+    // 打印结点数组
     for (int i = 0; i < 15; i++) {
         printf("%c ", srcArr[i]);
         if (i == 14) std::cout << "\n" << std::endl;
     }
+    // 利用数组中元素建立二叉树
+    int len = sizeof(srcArr) / sizeof(srcArr[0]);
+    BinaryTree<char> tree1;
+
+    tree1.InOrder(tree1.Root());
     
     std::cout << "Answer of Question5:" << std::endl; 
     std::cout << "The number of leaf nodes is 9. \n" << std::endl;
