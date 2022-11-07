@@ -1,6 +1,6 @@
 Pie : Pie.o
 	g++ *.o -o $@
-%.o : %.c
+%.o : %.cpp
 	g++ -c $< -o $@
 
 clean:

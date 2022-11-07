@@ -1,8 +1,8 @@
 CPP_FLAGS = -std=c++11
 
-main : main.o Stack.o Queue.o
+main : main.o
 	g++ ${CPP_FLAGS} *.o -o $@ 
-%.o : %.c
+%.o : %.cpp
 	g++ ${CPP_FLAGS} -c $< -o $@ 
 
 clean:

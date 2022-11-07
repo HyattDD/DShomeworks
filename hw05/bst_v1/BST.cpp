@@ -1,6 +1,5 @@
 #include <cassert>
 #include <cstdio>
-#include <malloc.h>
 #include "tree.h"
 
 typedef struct TREE_NODE {
